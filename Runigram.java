@@ -10,8 +10,6 @@ public class Runigram {
 		// Tests the reading and printing of an image:	
 		Color[][] tinypic = read("tinypic.ppm");
 		print(tinypic);
-		print(scaled(tinypic, 3, 5));
-
 		// Creates an image which will be the result of various 
 		// image processing operations:
 		Color[][] image;
@@ -23,16 +21,14 @@ public class Runigram {
 		
 		//// Write here whatever code you need in order to test your work.
 		//// You can continue using the image array.
-		Color[][] flippedVertically = flippedVertically(tinypic);
+		/*Color[][] flippedVertically = flippedVertically(tinypic);
 		print(flippedVertically);
-
 		print(grayScaled(tinypic));
 
 		Color x = new Color(100, 40, 100); 
 		Color y = new Color(200, 20, 40); 
 		print(blend(x, y, 0.25)); 
-
-		
+		 */
 	
 	}
 
@@ -230,7 +226,7 @@ public class Runigram {
 			double alpha = (n - i) / (double) n;
 			morphedImage = blend(source, target, alpha);
 			display(morphedImage);
-			StdDraw.pause(500); 
+			StdDraw.pause(500);
 		}
 		
 	}
